@@ -17,10 +17,10 @@ class MedicalCodingAgent:
 
         # Configure Tesseract OCR path
         if tesseract_cmd:
-            pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
+            pytesseract.pytesseract.tesseract_cmd ="C:\Program Files\Tesseract-OCR\tesseract.exe"
 
         # Configure Poppler path
-        self.poppler_path = poppler_path
+        self.poppler_path = "C:\Users\Jatin\Downloads\Release-26.02.0-0\poppler-26.02.0\Library\bin"
 
         # Load ICD-10 and CPT-4 data
         self.icd10_data = self.load_icd10_data(icd10_data_path)
